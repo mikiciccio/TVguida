@@ -3,7 +3,7 @@ import fs from 'fs';
 import { XMLParser } from 'fast-xml-parser';
 
 const WANT = ['Rai 1','Rai 2','Rai 3','Rete 4','Canale 5','Italia 1','La7','TV8','NOVE','Canale 20','Rai 4','Iris','Rai 5',
-'Rai Movie','Rai Premium','Cielo','Twenty seven','TV 2000','Cine34','Focus','Giallo','La5','La7 Cinema','Real Time','Top Crime','Rai Gulp','Rai YoYo','Rai News 24','TGcom24','Rai Storia',
+'Rai Movie','Rai Premium','Cielo','Twenty seven','TV 2000','Cine34','Focus','Giallo','La5','La7 Cinema','Cine 34','Real Time','Top Crime','Rai Gulp','Rai YoYo','Rai News 24','TGcom24','Rai Storia',
 'Rai Scuola','Focus','DMAX','Giallo','Warner TV','Food Network','K2','Frisbee','Boing','Cartoonito','La7d','Paramount Network',
 'Sportitalia','Mediaset Extra','Italia 2'];
 const norm = s => String(s).toLowerCase().replace(/[^a-z0-9]/g, '').replace(/hd$/, '');
