@@ -15,7 +15,7 @@ jobs:
         run: |
           git clone --depth 1 https://github.com/iptv-org/epg.git epg-src
           cd epg-src && npm install
-          npm run grab --- --sites=guidatv.sky.tv --days=2 --output=../epg/guide.xml
+          npm run grab --- --sites=guidatv.sky.it --days=2 --output=../epg/guide.xml
       - name: Crea guide.json
         env:
           TMDB_KEY: ${{ secrets.TMDB_KEY }}
