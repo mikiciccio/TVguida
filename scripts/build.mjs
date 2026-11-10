@@ -20,7 +20,7 @@ function t(s) {
 
 const xml = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_' })
   .parse(fs.readFileSync('epg/guide.xml', 'utf8')).tv;
-
+fs.writeFileSync('canali.txt', arr(xml.channel).map(c => txt(c['display-name'])).sort().join('\n'));
 let logos = {};
 try {
   const l = await (await fetch('https://iptv-org.github.io/api/logos.json')).json();
